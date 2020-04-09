@@ -2,20 +2,25 @@
 <html>
 <head>
     <script>
+        const randomDemon = () => {
+            var random = Math.floor(Math.random() * 5);
+            var demons = ["Apollyon","Amon","Bael","Belial","Ifrit"];
+            return demons[random];
+        }
         const textChanger = () => {
             document.getElementById("demo").innerHTML = "You have summoned.";
-            document.getElementById("demo2").innerHTML = "The DARK LORD!";
+            document.getElementById("demo2").innerHTML = randomDemon();
             document.getElementById("Image1").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Peter_Paul_Rubens_063.jpg/256px-Peter_Paul_Rubens_063.jpg";
             document.getElementById("Button1").style.display = "none";
         }
     </script>
 </head>    
     <body>
-        <h1>Satan Summoner</h1>
-        <p>Click the button below and summon SATAN!!!.</p>
-        <p id="demo">WILL </p>
+        <h1>Summoning Simulator</h1>
+        <p>Click the button below and summon a Daemon!!!.</p>
+        <p id="demo">DO </p>
         <p id="demo2">YOU.</p>
         <img id="Image1">
-        <button id="Button1" type="button" onclick="textChanger()">CLICK THE BUTTON?</button>
+        <button id="Button1" type="button" onclick="textChanger()">DARE ?</button>
     </body>
 </html>
