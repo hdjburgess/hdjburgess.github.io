@@ -5,6 +5,8 @@
         const textChanger = () => {
             document.getElementById("demo").innerHTML = "You have summoned.";
             document.getElementById("demo2").innerHTML = "The DARK LORD!";
+            document.getElementById("Image1").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Peter_Paul_Rubens_063.jpg/256px-Peter_Paul_Rubens_063.jpg";
+            document.getElementById("Button1").style.display = "none";
         }
     </script>
 </head>    
@@ -13,6 +15,7 @@
         <p>Click the button below and summon SATAN!!!.</p>
         <p id="demo">WILL </p>
         <p id="demo2">YOU.</p>
-        <button type="button" onclick="textChanger()">CLICK THE BUTTON?</button>
+        <img id="Image1">
+        <button id="Button1" type="button" onclick="textChanger()">CLICK THE BUTTON?</button>
     </body>
 </html>
