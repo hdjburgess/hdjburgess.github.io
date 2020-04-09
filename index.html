@@ -2,9 +2,10 @@
 <html>
 <head>
     <script>
+        var demons = ["Apollyon","Amon","Bael","Belial","Ifrit"];
+        // just add demons to the list above to expand the summoning library
         const randomDemon = () => {
-            var random = Math.floor(Math.random() * 5);
-            var demons = ["Apollyon","Amon","Bael","Belial","Ifrit"];
+            var random = Math.floor(Math.random() * demons.length);
             return demons[random];
         }
         const textChanger = () => {
@@ -12,6 +13,7 @@
             document.getElementById("demo2").innerHTML = randomDemon();
             document.getElementById("Image1").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Peter_Paul_Rubens_063.jpg/256px-Peter_Paul_Rubens_063.jpg";
             document.getElementById("Button1").style.display = "none";
+            document.getElementById("dmsg").innerHTML = `There are ${demons.length} daemons to collect, summon them all!`;
         }
     </script>
 </head>    
@@ -22,5 +24,6 @@
         <p id="demo2">YOU.</p>
         <img id="Image1">
         <button id="Button1" type="button" onclick="textChanger()">DARE ?</button>
+        <p id="dmsg"></p>
     </body>
 </html>
