@@ -1,2 +1,2 @@
 # hdjburgess.github.io
-My webpage ? 
+Daemon Summoning Website for webdesign skills practice.
