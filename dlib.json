@@ -1,0 +1,14 @@
+{
+    "Demons": [
+            {"name":"Ifrit","type":"Fire","img":"https://upload.wikimedia.org/wikipedia/commons/2/2f/Arabian_Nights_-_Letchford_-_44.jpg"},
+            {"name":"Belial","type":"Air","img":"https://upload.wikimedia.org/wikipedia/commons/e/e9/Belial.jpg"},
+            {"name":"Astaroth","type":"Void","img":"https://upload.wikimedia.org/wikipedia/commons/7/7b/Astaroth_%28DI%29.png"},
+            {"name":"Nurgle","type":"Plague","img":"https://www.belloflostsouls.net/wp-content/uploads/2017/07/nurgle-daemon-horz.jpg"},
+            {"name":"Grigori","type":"Void","img":"https://vignette.wikia.nocookie.net/the-demonic-paradise/images/d/d8/The_Grigori.jpg"},
+            {"name":"Krampus","type":"Winter","img":"https://upload.wikimedia.org/wikipedia/commons/a/a8/Krampus-Postkarte_um_1900.jpg"}
+            ],
+    "Evil Gods": {
+            "Samael": "King of Demons"
+
+    }     
+}
