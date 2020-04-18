@@ -1,4 +1,4 @@
-const demonLib = require("./dlib.json");   
+const demonLib = require("../dlib.json");   
 let name = "";
 let type = "";
 let img = "";
