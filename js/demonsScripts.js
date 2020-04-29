@@ -7,7 +7,7 @@ const processJSON = async () => {
         return response.json();
     }).then(demonLib => {
         textChanger(demonLib);
-    });
+    }); 
 };
 
 const randomNum = (demonLib) => {
@@ -15,18 +15,21 @@ const randomNum = (demonLib) => {
             return random
         };
 
-const demonAssigner = (demonLib) => {
+const demonAssigner =async (demonLib) => {
             let x = randomNum(demonLib)
              name = demonLib.Demons[x].name;
              type = demonLib.Demons[x].type;
               img = demonLib.Demons[x].img
             };
 
-const textChanger = (demonLib) => {
-    demonAssigner(demonLib);
+const textChanger = async (demonLib) => {
+        await demonAssigner(demonLib);
         document.getElementById("demo").innerHTML = "You have summoned.";
         document.getElementById("demo2").innerHTML = name;
         document.getElementById("Image1").src = img;
         document.getElementById("Button1").style.display = "none";
         document.getElementById("dmsg").innerHTML = `There are ${demonLib.Demons.length} daemons to collect, summon them all!`;
+        document.getElementById("Button2").style.visibility = "visible";
+        document.body.classList.add('crtx');
+
         };  
