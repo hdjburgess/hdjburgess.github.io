@@ -26,10 +26,13 @@ const textChanger = async (demonLib) => {
         await demonAssigner(demonLib);
         document.getElementById("demo").innerHTML = "You have summoned.";
         document.getElementById("demo2").innerHTML = name;
+        document.getElementById("demo2").style.fontSize = "35px";
         document.getElementById("Image1").src = img;
         document.getElementById("Button1").style.display = "none";
         document.getElementById("dmsg").innerHTML = `There are ${demonLib.Demons.length} daemons to collect, summon them all!`;
         document.getElementById("Button2").style.visibility = "visible";
         document.body.classList.add('crtx');
+        document.getElementById("demo2").classList.add('glitch');
+
 
         };  
