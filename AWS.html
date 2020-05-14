@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/aws.js" async></script>
+</head>    
+    <body>
+        <h1>Message Logger</h1>
+        <form id="simple" action="https://8up2esue32.execute-api.us-east-1.amazonaws.com/dev/users/logs" method="POST">
+            <label for="message">What message would you like to post?</label>
+            <input type="text" id="message" name="Message"><br><br>
+            <button id="button2" type="submit">Post your message!</button>
+        </form>
+          
+          <div id="box"></div>
+    </body>
+</html>
+
