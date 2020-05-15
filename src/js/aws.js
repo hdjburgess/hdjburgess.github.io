@@ -1,4 +1,5 @@
-const simpleForm = document.getElementById("simple");
+import {simpleForm} from './domloader';
+
 simpleForm.onsubmit = e => {
     
   // Stop the form submission from trying to go to a new page.

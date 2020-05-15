@@ -1,0 +1,1 @@
+export const simpleForm = document.getElementById("simple");
